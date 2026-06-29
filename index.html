@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aubree Thompson</title>
+  <meta name="description" content="Portfolio of Aubree Thompson, mathematics graduate, data scientist, and software engineer." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+
+<nav>
+  <a href="#hero" class="nav-logo">Aubree Thompson</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#academic">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about"      onclick="closeMenu()">About</a>
+  <a href="#skills"     onclick="closeMenu()">Skills</a>
+  <a href="#academic"   onclick="closeMenu()">Projects</a>
+  <a href="#experience" onclick="closeMenu()">Experience</a>
+  <a href="#education"  onclick="closeMenu()">Education</a>
+  <a href="#contact"    onclick="closeMenu()">Contact</a>
+</div>
+
+
+
+<section id="hero" class="graph-warm">
+  <div class="hero-inner">
+    <h1>Aubree<br><em>Thompson</em></h1>
+
+    <p class="hero-bio">
+      Mathematics graduate with over a year of production software engineering internship experience
+      on a derivatives and investment team. I apply analytical thinking to nearly every aspect of
+      problem-solving and am excited to contribute through the combination of critical thinking,
+      rigorous statistics, statistical computing, back-end software engineering, and a genuine
+      motivation for quantitative problems. My background in applied statistics and computer
+      information science, combined with hands-on software engineering experience, gives me a
+      perspective that values both statistical depth and engineering discipline. I am currently
+      seeking opportunities in data science and analysis, research engineering, data engineering,
+      and machine learning engineering.
+    </p>
+
+    <p class="hero-annotation">Interested in analyzing datasets that give reasoning behind topics from finance, to climate change, to education.</p>
+
+    <div class="btn-row">
+      <a href="assets/resume.pdf" class="btn btn-fill" download>
+        <i class="ti ti-download"></i> Resume
+      </a>
+      <a href="https://github.com/aubreethomp" class="btn btn-outline" target="_blank" rel="noopener">
+        <i class="ti ti-brand-github"></i> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/aubree-thompson-430b48254/" class="btn btn-outline" target="_blank" rel="noopener">
+        <i class="ti ti-brand-linkedin"></i> LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="about" class="graph-light">
+  <div class="section-inner">
+    <span class="section-label">about me</span>
+    <h2>Statistical Analyst &amp; Software Engineer</h2>
+
+    <div class="about-grid">
+
+      <div>
+        <div class="polaroid">
+          <div class="polaroid-img">
+            <div class="pc tl"></div>
+            <div class="pc tr"></div>
+            <div class="pc bl"></div>
+            <div class="pc br"></div>
+            <img src="assets/image.jpg" alt="Aubree Thompson"
+                 style="width:100%;height:100%;object-fit:cover;display:block;">
+          </div>
+        </div>
+      </div>
+
+      <div class="about-body">
+        <p>
+          I graduated from Washburn University with a BS in mathematics, a concentration in applied
+          statistics, and a minor in computer information science, finishing with a 3.95 GPA. The
+          foundation of that success was straightforward: I found the material genuinely compelling.
+          The intellectual depth of the coursework, and the satisfaction of working through difficult
+          problems, was a consistent source of motivation throughout. Pure mathematics courses such as
+          linear algebra and stochastic processes trained me to recognize structure in abstract problems
+          and approach them from multiple analytical angles, building fluency in eigendecomposition,
+          Markov chain modeling, and the mathematical foundations of Brownian motion from first
+          principles. Applied regression and time series courses translated those tools into practice
+          through AIC/BIC model selection, variance inflation factor analysis, and ARIMA/SARIMA
+          identification, worked through both by hand and in Python and R. Data mining and machine
+          learning coursework in Python spanned both supervised and unsupervised methods, from k-means
+          clustering analyzed through centroid convergence and within-cluster variance, to Bayesian
+          classifiers grounded in prior and posterior distributions, support vector machines, and neural
+          networks. The emphasis throughout was not just on application, but on mechanism: understanding
+          how backpropagation propagates error gradients, how gradient descent minimizes a loss function
+          across iterations, and what it actually means for a model to generalize, which built a concrete
+          picture of what machine learning and modern AI are at a mathematical level. Computer science
+          coursework in algorithm design and database management sharpened my ability to build efficient,
+          well-structured solutions to complex problems, a skill I carried equally into statistical
+          modeling and into my software engineering internship.
+        </p>
+        <p>
+          Beyond academics, I spent over a year working on a derivatives and investment front office
+          tech team, contributing to production Python codebases that the derivatives team relied on
+          daily. Working alongside experienced engineers shaped my understanding of collaborative
+          software development. Every change I made moved through a formal review process, with merge
+          requests I authored to document not just the code modification, but the implementation SQL,
+          test coverage, and rollback procedure, so both the engineering and data teams could review
+          and deploy with confidence. I developed the discipline of asking well-structured questions by
+          framing what I already understood, what I had already investigated, and where I was stuck
+          before pulling in a senior engineer. Much of my day-to-day work centered on supporting data
+          workflows directly: writing SQL validation queries to confirm that pipeline loads were accurate
+          and complete after code changes, and improving the automated email outputs downstream users
+          depended on, ensuring every alert carried properly structured context and clear warnings. On
+          the engineering side, I reduced a critical data loader's runtime by approximately 87% through
+          vectorization and threading, built containerized internal tooling with Docker, and contributed
+          to cross-platform CI/CD pipeline compatibility between Windows and Linux environments. That
+          experience changed how I approach data work: I think in terms of systems, observability,
+          correctness, and efficiency, not just models.
+        </p>
+        <p>
+          Outside of code, I am drawn to climate science, the way math shows up in music, how
+          quantitative methods can model psychological and social phenomena, and any dataset that tells
+          a story hiding in apparent noise. I am starting a Master's in Data Science in Fall 2026 and
+          actively looking for full-time roles where statistical depth and engineering discipline meet.
+        </p>
+
+        <div class="stats-row">
+          <div class="stat-item">
+            <div class="stat-num">3.95</div>
+            <div class="stat-desc">GPA, Summa Cum Laude</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">1+ yr</div>
+            <div class="stat-desc">Production engineering experience</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section id="skills" class="graph-warm">
+  <div class="section-inner">
+    <span class="section-label">technical skills</span>
+    <h2>Experienced With:</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-note sn-y">
+        <p class="skill-group-name">Languages</p>
+        <div class="tags">
+          <span class="tag t-sage">Python</span>
+          <span class="tag t-sage">R</span>
+          <span class="tag t-sage">SQL</span>
+          <span class="tag t-sage">Java</span>
+          <span class="tag t-sage">C#</span>
+          <span class="tag t-sage">VBA</span>
+          <span class="tag t-sage">TypeScript</span>
+        </div>
+      </div>
+
+      <div class="skill-note sn-b">
+        <p class="skill-group-name">Libraries</p>
+        <div class="tags">
+          <span class="tag t-amber">Pandas</span>
+          <span class="tag t-amber">NumPy</span>
+          <span class="tag t-amber">Matplotlib</span>
+          <span class="tag t-amber">Scikit-learn</span>
+          <span class="tag t-amber">ggplot2</span>
+          <span class="tag t-amber">tidyverse</span>
+          <span class="tag t-amber">dplyr</span>
+        </div>
+      </div>
+
+      <div class="skill-note sn-p">
+        <p class="skill-group-name">Statistics and ML</p>
+        <div class="tags">
+          <span class="tag t-gray">Regression Analysis</span>
+          <span class="tag t-gray">Time Series (ARIMA, SARIMA)</span>
+          <span class="tag t-gray">LSTM, Deep Learning</span>
+          <span class="tag t-gray">Machine Learning</span>
+          <span class="tag t-gray">Data Mining</span>
+          <span class="tag t-gray">Hypothesis Testing</span>
+          <span class="tag t-gray">Stochastic Processes</span>
+          <span class="tag t-gray">Model Evaluation</span>
+        </div>
+      </div>
+
+      <div class="skill-note sn-g">
+        <p class="skill-group-name">Tools and Platforms</p>
+        <div class="tags">
+          <span class="tag t-gray">Docker</span>
+          <span class="tag t-gray">Git, GitHub, GitLab</span>
+          <span class="tag t-gray">Microsoft 365</span>
+          <span class="tag t-gray">SQL</span>
+          <span class="tag t-gray">Jira</span>
+          <span class="tag t-gray">Postman, Swagger</span>
+          <span class="tag t-gray">Angular</span>
+          <span class="tag t-gray">Excel, VBA, Pivot Tables</span>
+          <span class="tag t-gray">RStudio</span>
+          <span class="tag t-gray">VS Code, Visual Studio</span>
+          <span class="tag t-gray">SAS</span>
+          <span class="tag t-gray">Power BI</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section id="academic" class="project-section-light">
+  <div class="section-inner">
+    <span class="section-label">academic projects</span>
+    <h2>Coursework and research.</h2>
+
+    <div class="project-grid">
+
+      <div class="project-card tape-k tilt-l">
+        <div class="tags">
+          <span class="tag t-sage">Python</span>
+          <span class="tag t-amber">Machine Learning</span>
+          <span class="tag t-amber">Deep Learning</span>
+          <span class="tag t-gray">Time Series</span>
+        </div>
+        <p class="project-name">Stock Price Prediction: Model Comparison Study</p>
+        <p class="project-desc">
+          Recreated and extended a published stock forecasting study comparing Holt-Winters, ARIMA,
+          MARS, and LSTM models across historical stock data. Cleaned monetary and date fields, built
+          train/test splits, evaluated performance with RMSE, and analyzed how COVID-era market
+          disruption affected forecasting accuracy across all methods.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/aubreethomp/Stock-Prediction-Models" class="proj-btn">
+            <i class="ti ti-brand-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card tape-s tilt-r">
+        <div class="tags">
+          <span class="tag t-sage">SQL</span>
+          <span class="tag t-gray">ER Modeling</span>
+          <span class="tag t-gray">Normalization</span>
+        </div>
+        <p class="project-name">University Relational Database System</p>
+        <p class="project-desc">
+          Designed and implemented a full relational database from scenario analysis through
+          deployment, including ER modeling, normalized schema design, keys, constraints, and
+          many-to-many resolution. Wrote SQL queries, views, and triggers for GPA risk checks,
+          instructor load summaries, schedule conflict detection, and classroom capacity rules.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/aubreethomp/University-Database" class="proj-btn">
+            <i class="ti ti-brand-github"></i> GitHub
+          </a>
+          <a href="assets/database_management_final.pdf" class="proj-btn">
+            <i class="ti ti-file-description"></i> PDF Report
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card tape-a tilt-l">
+        <div class="tags">
+          <span class="tag t-sage">R</span>
+          <span class="tag t-amber">ggplot2</span>
+          <span class="tag t-gray">Regression</span>
+          <span class="tag t-gray">Statistical Modeling</span>
+        </div>
+        <p class="project-name">Home Sale Price Regression Analysis</p>
+        <p class="project-desc">
+          Built predictive models for home sale prices using exploratory data analysis, dummy
+          variable encoding, stepwise variable selection, interaction terms, residual diagnostics,
+          and actual vs. predicted visualization. Fully reproducible R analysis with ggplot2
+          graphics throughout.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/aubreethomp/Modeling-Sale-Prices-of-Homes" class="proj-btn">
+            <i class="ti ti-brand-github"></i> GitHub
+          </a>
+          <a href="assets/regression_final.pdf" class="proj-btn">
+            <i class="ti ti-file-description"></i> PDF Report
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card tape-k tilt-r">
+        <div class="tags">
+          <span class="tag t-sage">R</span>
+          <span class="tag t-amber">Forecasting</span>
+          <span class="tag t-gray">SARIMA</span>
+          <span class="tag t-gray">Decomposition</span>
+        </div>
+        <p class="project-name">Ice Cream Production Time Series Analysis</p>
+        <p class="project-desc">
+          Analyzed monthly ice cream production data using classical decomposition, seasonality and
+          autocorrelation diagnostics, Holt-Winters smoothing, harmonic regression, ARMA residual
+          modeling, and SARIMA forecasting. Full reproducible R analysis with diagnostic plots and
+          forecast visualization.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/aubreethomp/Time-Series-Analysis-of-Ice-Cream-Sales" class="proj-btn">
+            <i class="ti ti-brand-github"></i> GitHub
+          </a>
+          <a href="assets/time_series_final.pdf" class="proj-btn">
+            <i class="ti ti-file-description"></i> PDF Report
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Wavy hand-drawn SVG divider -->
+<div class="wavy-divider" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 36" preserveAspectRatio="none" style="height:36px;">
+    <path d="M0 18 C75 6, 150 30, 225 18 S375 6, 450 18 S600 30, 675 18 S825 6, 900 18"
+          stroke="rgba(175,150,120,0.38)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    <circle cx="225" cy="18" r="2.5" fill="rgba(175,150,120,0.32)"/>
+    <circle cx="450" cy="18" r="3.5" fill="rgba(175,150,120,0.38)"/>
+    <circle cx="675" cy="18" r="2.5" fill="rgba(175,150,120,0.32)"/>
+  </svg>
+</div>
+
+
+<section id="personal" class="graph-warm">
+  <div class="section-inner">
+    <span class="section-label">personal projects</span>
+    <h2>Outside of Class</h2>
+
+    <div class="project-grid">
+
+      <div class="project-card personal-card tape-a tilt-l">
+        <div class="tags">
+          <span class="tag t-sage">Python</span>
+          <span class="tag t-amber">Django</span>
+          <span class="tag t-amber">JSON</span>
+          <span class="tag t-amber">TypeScript</span>
+          <span class="tag t-amber">Lottie</span>
+          <span class="tag t-amber">APIs</span>
+          <span class="tag t-amber">Database Integration</span>
+          <span class="tag t-gray">Climate Data</span>
+        </div>
+        <p class="project-name">Climate Change Data Analysis</p>
+        <p class="project-desc">
+          After taking a semester-long environmental science course, I was inspired to build a project
+          that could make the vast, interconnected science of climate change accessible to a general
+          audience. I learned more from that course than almost any other, and I wanted to apply that
+          knowledge to something someone without a scientific background could meaningfully explore.
+          The result is "The Threshold," an interactive web application that maps 19 scientifically
+          documented climate tipping points, the thresholds beyond which a natural system can shift
+          irreversibly. The app lets users explore each tipping point in depth, tracing the cascade of
+          effects that follows when one system tips, from melting ice sheets raising sea levels to
+          collapsing ocean currents disrupting monsoons that feed hundreds of millions of people. A
+          built-in Domino Simulator lets users adjust real-world conditions like emissions pressure,
+          policy response speed, and the spread of misinformation, then watch which tipping points
+          activate and cascade into each other. There are thousands of human activities that contribute
+          to and interact with climate change, but most people are never shown how these forces connect.
+          This project is an attempt to show not just that climate change is happening, but how it
+          cascades, why it accelerates, and what makes it so difficult to stop once it begins.
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/aubreethomp/Climate-Change-Service" class="proj-btn">
+            <i class="ti ti-brand-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="experience" class="graph-light">
+  <div class="section-inner">
+    <span class="section-label">experience</span>
+    <h2>Internships</h2>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <p class="tl-company">Eldridge, formerly Security Benefit</p>
+        <p class="tl-role">Software Engineer Intern, Investment and Derivatives Front Office Tech</p>
+        <p class="tl-date">March 2025 to Present, Topeka, KS</p>
+        <ul class="tl-bullets">
+          <li>Reduced an internal application's data loading runtime by approximately 87% through vectorization and threading optimizations in Python.</li>
+          <li>Maintained and improved data loaders and plugins essential to the derivatives team's daily trading workflow.</li>
+          <li>Wrote SQL queries to validate data loads after code changes, investigate issues, and ensure accuracy and completeness of loaded data.</li>
+          <li>Enhanced automated email outputs tied to data loaders, improving message clarity, structure, and usability for downstream data users.</li>
+          <li>Created detailed change tickets and merge requests documenting file modifications, implementation SQL, testing steps, and rollback procedures, coordinating with the data team for organized deployments.</li>
+          <li>Standardized cross-OS unit test compatibility between Windows workstations and Linux CI/CD pipelines using efficient mocking and dynamic assertions.</li>
+          <li>Migrated a legacy report generation system to a Python and C#/.NET architecture, automating API requests with JSON configurations and containerizing with Docker Compose for persistent shared network storage.</li>
+          <li>Built a centralized team resource homepage in Angular with a draggable card-based UI, persistent cookie storage for user preferences, and Azure Windows authentication integration.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="education" class="graph-warm">
+  <div class="section-inner">
+    <span class="section-label">education</span>
+    <h2>Academic background.</h2>
+
+    <div class="edu-card">
+      <span class="edu-badge">Completed, May 2026</span>
+      <p class="edu-school">Washburn University</p>
+      <p class="edu-degree">
+        Bachelor of Science in Mathematics<br>
+        Concentration: Applied Statistics<br>
+        Minor: Computer Information Science
+      </p>
+      <p class="edu-meta">
+        GPA 3.95, Graduated Summa Cum Laude<br>
+        Kappa Mu Epsilon Honor Society, 2026 Regional Convention Award Committee Representative<br>
+        Arden L. Kanode, Edward L. and Julie L. Glotzbach, and John Ross and Lydia Greene Kinzer Scholarships
+      </p>
+      <div class="coursework-pills">
+        <span class="cpill">Regression Analysis</span>
+        <span class="cpill">Time Series Analysis</span>
+        <span class="cpill">Stochastic Processes</span>
+        <span class="cpill">Math Stats I and II</span>
+        <span class="cpill">Data Structures and Algorithms</span>
+        <span class="cpill">Non-Parametrics / Quality Control</span>
+        <span class="cpill">Data Mining</span>
+        <span class="cpill">Statistical Computing</span>
+        <span class="cpill">Database Management</span>
+        <span class="cpill">Linear Algebra</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="goals" class="graph-light">
+  <div class="section-inner">
+    <span class="section-label">what I am looking for</span>
+    <h2>Interested In:</h2>
+
+    <div class="goals-grid">
+
+      <div class="goal-card">
+        <div class="goal-icon-circle gi-sage">
+          <img src="assets/icons/data.svg" alt="" aria-hidden="true" width="22" height="22">
+        </div>
+        <p class="goal-title">Data Science and Analytics</p>
+        <p class="goal-desc">Roles that let me build predictive models, find insight in complex datasets, and communicate findings clearly to both technical and non-technical audiences.</p>
+      </div>
+
+      <div class="goal-card">
+        <div class="goal-icon-circle gi-amber">
+          <img src="assets/icons/quant.svg" alt="" aria-hidden="true" width="22" height="22">
+        </div>
+        <p class="goal-title">Quantitative Finance</p>
+        <p class="goal-desc">Quant analyst or financial data science roles where my derivatives domain knowledge, stochastic processes background, and statistical depth are real advantages.</p>
+      </div>
+
+      <div class="goal-card">
+        <div class="goal-icon-circle gi-lavender">
+          <img src="assets/icons/ml.svg" alt="" aria-hidden="true" width="22" height="22">
+        </div>
+        <p class="goal-title">Machine Learning Engineering</p>
+        <p class="goal-desc">Building and deploying ML systems end to end, bridging the gap between research and production.</p>
+      </div>
+
+      <div class="goal-card">
+        <div class="goal-icon-circle gi-sky">
+          <img src="assets/icons/research.svg" alt="" aria-hidden="true" width="22" height="22">
+        </div>
+        <p class="goal-title">Research and Development</p>
+        <p class="goal-desc">Long-term interest in applied research using rigorous math and statistics to solve hard problems in dynamic systems or complex modeling.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section id="contact">
+  <div class="section-inner">
+    <span class="section-label">get in touch</span>
+    <h2>Reach Out</h2>
+    <p class="contact-note">
+      Actively seeking full-time roles in data science, quantitative analysis, machine learning
+      engineering, or analytics engineering. Open to remote or relocation.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:aubreerthomp@gmail.com" class="btn btn-cf">
+        <i class="ti ti-mail"></i> aubreerthomp@gmail.com
+      </a>
+      <a href="https://linkedin.com/in/aubree-thompson-430b48254/" class="btn btn-co" target="_blank" rel="noopener">
+        <i class="ti ti-brand-linkedin"></i> LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-inner">
+    <p>
+      Aubree Thompson, Topeka, KS.
+      <!-- Update with actual repo URL once pushed to GitHub -->
+      <a href="https://github.com/YOUR-GITHUB-USERNAME/YOUR-REPO-NAME" target="_blank" rel="noopener">
+        View source on GitHub <i class="ti ti-arrow-up-right" style="font-size:0.7rem;"></i>
+      </a>
+    </p>
+  </div>
+</footer>
+
+
+<!-- Scripts at end of body for best load performance -->
+<script src="main.js"></script>
+
+</body>
+</html>
