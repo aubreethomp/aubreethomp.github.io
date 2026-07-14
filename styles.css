@@ -63,13 +63,6 @@ html {
 }
 
 @font-face {
-  font-family: 'Khand';
-  src: url('fonts/Khand-Regular.woff2') format('woff2');
-  font-weight: 100 900;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Teko';
   src: url('fonts/Teko-Regular.woff2') format('woff2');
   font-weight: 100 900;
@@ -77,8 +70,22 @@ html {
 }
 
 @font-face {
-    font-family: 'Embolism Spark';
-    src: url('fonts/Embolism-Spark.ttf') format('truetype');
+    font-family: 'Stamp';
+    src: url('fonts/Stamp.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futile';
+    src: url('fonts/Futile.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Block';
+    src: url('fonts/Block.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -112,7 +119,7 @@ html {
 /* Global */
 
 body {
-  font-family: 'Khand', system-ui, sans-serif;
+  font-family: 'Futile', system-ui, sans-serif;
   color: var(--text);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -160,13 +167,14 @@ nav {
 }
 
 .nav-logo {
-  font-family: 'Khand', system-ui, sans-serif;
+  font-family: 'Block', system-ui, sans-serif;
   font-size: 1.05rem;
   color: var(--text-4);
   text-decoration: none;
 }
 
 .nav-links {
+  font-family: 'Block', system-ui, sans-serif;
   display: flex;
   gap: 1.75rem;
   list-style: none;
@@ -243,11 +251,12 @@ nav {
   max-width: var(--max);
   margin: 0 auto;
   padding: 5rem 2rem;
+  position: relative;
+  z-index: 1;
 }
 
-/* Handwritten section labels with subtle tape-highlight */
 .section-label {
-  font-family: 'Embolism Spark', cursive;
+  font-family: 'Stamp', cursive;
   font-size: 1.15rem;
   font-weight: 500;
   color: var(--sage);
@@ -266,6 +275,53 @@ nav {
   border-radius: 3px;
   transform: rotate(-0.5deg) scaleX(1.04);
   z-index: -1;
+}
+
+.section-with-asset {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-asset {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.45;
+}
+
+.about-asset {
+  right: -1rem;
+  top: 0rem;
+  width: min(500px, 400vw);
+  max-width: 500px;
+  transform: rotate(1deg);
+}
+
+.calc-asset {
+  left: -0.5rem;
+  top: 1.5rem;
+  width: min(140px, 18vw);
+  max-width: 140px;
+  transform: rotate(8deg);
+  opacity: 0.8;
+}
+
+.education-heading-row {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.education-heading-row h2 {
+  margin-bottom: 0;
+}
+
+.edu-cap {
+  width: clamp(46px, 6vw, 62px);
+  height: auto;
+  display: block;
 }
 
 /* Buttons */
@@ -352,9 +408,8 @@ nav {
   margin-bottom: 1rem;
 }
 
-/* Handwritten margin-note annotation */
 .hero-annotation {
-  font-family: 'Embolism Spark', cursive;
+  font-family: 'Futile', cursive;
   font-size: 1rem;
   color: var(--text-3);
   background: rgba(255, 255, 255, 0.55);
@@ -430,7 +485,7 @@ nav {
 }
 
 .polaroid-caption {
-  font-family: 'Embolism Spark', cursive;
+  font-family: 'Stamp', cursive;
   font-size: 1rem;
   color: var(--text-3);
   text-align: center;
@@ -505,7 +560,7 @@ nav {
 .sn-g { background: #E6F5EE; transform: rotate(0.5deg); }
 
 .skill-group-name {
-  font-family: 'Embolism Spark', cursive;
+  font-family: 'Futile', cursive;
   font-size: 1rem;
   font-weight: 600;
   color: var(--text-2);
@@ -889,7 +944,7 @@ footer {
 }
 
 .footer-tagline {
-  font-family: 'Embolism Spark', cursive;
+  font-family: '', cursive;
   font-size: 0.95rem;
   color: var(--text-3);
 }
