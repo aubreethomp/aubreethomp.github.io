@@ -12,7 +12,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /* Design Tokens */
 
 :root {
@@ -367,24 +366,53 @@ nav {
   flex-wrap: wrap;
 }
 
-/* Tag pills */
+/* Skill / project stamps */
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.5rem;
 }
 
-.tag {
-  display: inline-block;
-  padding: 0.25rem 0.65rem;
-  border-radius: 99px;
-  font-size: 0.77rem;
-  font-weight: 400;
+.stamp {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.26rem 0.7rem;
+  font-family: 'Typewriter', 'Courier New', monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  border: 1.5px solid currentColor;
+  border-radius: 4px;
+  background: transparent;
+  position: relative;
 }
 
-.t-brown  { background: var(--dark-brown); color: #fff; }
-.t-amber { background: var(--amber-lt); color: #628141; }
-.t-gray  { background: #9BB4C0; color: #703B3B; }
+/* inset ring gives the double-line stamped-ink look */
+.stamp::before {
+  content: '';
+  position: absolute;
+  inset: 2.5px;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* organic, slightly-off-kilter stamp rotations */
+.tags .stamp:nth-child(3n)   { transform: rotate(1.2deg); }
+.tags .stamp:nth-child(3n+1) { transform: rotate(-1.6deg); }
+.tags .stamp:nth-child(3n+2) { transform: rotate(0.6deg); }
+
+.stamp:hover {
+  transform: rotate(0deg) scale(0.95);
+  transition: transform 0.15s ease;
+}
+
+.stamp-brown { color: var(--dark-brown); background: rgba(78, 34, 15, 0.05); }
+.stamp-amber { color: #7A5A22; background: rgba(122, 90, 34, 0.07); }
+.stamp-gray  { color: #3F5A63; background: rgba(63, 90, 99, 0.07); }
 
 
 /* hero */
